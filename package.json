@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "tree-model": "~1.0.7"
+    "tree-model": "~1.0.7",
+    "fs-extra": "~7.0.0"
   },
   "scripts": {
     "run": "node main.js"

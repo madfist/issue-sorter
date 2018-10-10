@@ -1,0 +1,70 @@
+{
+	"issues": [
+		{
+			"issue": "Get new coffee machine",
+			"state": "done"
+		},
+		{
+			"issue": "(Re)fill beans",
+			"state": "doing"
+		},
+		{
+			"issue": "Fill water tank",
+			"state": "to do"
+		},
+		{
+			"issue": "Make coffee",
+			"state": "on hold"
+		},
+		{
+			"issue": "Make more coffee",
+			"state": "to do"
+		},
+		{
+			"issue": "Turn old coffee machine off and on again",
+			"state": "failed"
+		},
+		{
+			"issue": "Repair old coffee machine",
+			"state": "failed"
+		}
+	],
+	"states": [
+		{
+			"from": "to do",
+			"to": "doing"
+		},
+		{
+			"from": "to do",
+			"to": "on hold"
+		},
+		{
+			"from": "doing",
+			"to": "done"
+		},
+		{
+			"from": "doing",
+			"to": "failed"
+		},
+		{
+			"from": "doing",
+			"to": "on hold"
+		},
+		{
+			"from": "on hold",
+			"to": "doing"
+		},
+		{
+			"from": "extra",
+			"to": "none"
+		},
+		{
+			"from": "super",
+			"to": "to do"
+		},
+		{
+			"from": "mid",
+			"to": "doing"
+		}
+	]
+}
