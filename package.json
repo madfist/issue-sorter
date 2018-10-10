@@ -6,8 +6,5 @@
   "dependencies": {
     "tree-model": "~1.0.7",
     "fs-extra": "~7.0.0"
-  },
-  "scripts": {
-    "run": "node main.js"
   }
 }

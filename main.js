@@ -40,6 +40,11 @@ fs.readJson(process.argv[2])
                 node.addChild(model.parse({id: state_pair.to, issues: []}));
             }
         });
+        root_state.walk(nd => {
+            if (!nd.hasChildren()) {
+                nd.setIndex(0);
+            }
+        });
         obj.issues.forEach(issue => {
             let node = root_state.first(nd => (nd.model.id === issue.state));
             node.model.issues.push(issue.issue);
